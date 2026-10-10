@@ -10,6 +10,7 @@ const chineseTranslations = {
   "navigationLabel": "主导航",
   "navCourses": "课程介绍",
   "navResults": "历年成绩",
+  "navDocuments": "报名文件",
   "navTimetable": "2027年课表",
   "navContact": "咨询报名 <span aria-hidden=\"true\">↗</span>",
   "heroEyebrow": "<span class=\"little-star\" aria-hidden=\"true\">✦</span> 墨尔本 Epping · 1至8年级",
@@ -133,10 +134,45 @@ const chineseTranslations = {
   "copyright": "© 2026 Pintop Epping 教育中心",
   "footerTagline": "早一步准备，多一份选择。",
   "languageSwitchLabel": "网站语言",
-  "menuToggleLabel": "展开或收起导航菜单"
+  "menuToggleLabel": "展开或收起导航菜单",
+  "documentsPageTitle": "报名文件 | Pintop Epping 教育中心",
+  "documentsPageDescription": "Pintop Epping教育中心2027年英语和数学课程报名海报、入学条款、退费政策及报名表。",
+  "termsPageTitle": "入学条款 | Pintop Epping 教育中心",
+  "termsPageDescription": "Pintop Epping教育中心现学年的入学报名条款和条件，以及历年报名文件。",
+  "refundPageTitle": "退费政策 | Pintop Epping 教育中心",
+  "refundPageDescription": "Pintop Epping教育中心现学年的退费政策，以及历年报名文件。",
+  "documentsEyebrow": "英语与数学课程",
+  "documentsHeading": "报名文件",
+  "documentsIntro": "了解课程，查阅报名入学条款和退费政策，为新学年做好准备。",
+  "termsHeading": "入学报名条款和条件",
+  "termsIntro": "报名之前，请查阅学生报名学年的入学报名条款和条件。",
+  "refundHeading": "退费政策",
+  "refundIntro": "请查阅学生报名学年的退费政策及相关办理流程。",
+  "formHeading": "报名表",
+  "formPending": "稍后提供。报名表准备好后，可在此下载。",
+  "pdfPending": "PDF稍后提供。",
+  "currentYearLabel": "最新版本",
+  "readTerms": "查阅入学条款 <span aria-hidden=\"true\">→</span>",
+  "readRefund": "查阅退费政策 <span aria-hidden=\"true\">→</span>",
+  "viewPdf": "打开PDF <span aria-hidden=\"true\">↗</span>",
+  "downloadPdf": "下载PDF <span aria-hidden=\"true\">↓</span>",
+  "allDocuments": "所有报名文件 <span aria-hidden=\"true\">→</span>",
+  "postersHeading": "新学年，一目了然。",
+  "postersIntro": "报名海报：课程介绍、上课时间及学生历年成绩。点击海报可查看大图。",
+  "enrolmentPoster": "中文海报",
+  "enrolmentPosterSource": "/assets/img/pintop/enrolment-2027-zh.png",
+  "enrolmentPosterAlt": "2027年英语和数学课程中文报名海报，含课程、课表、校区及历年成绩",
+  "openEnrolmentPoster": "在新标签页查看中文报名海报",
+  "viewPoster": "查看大图 ↗",
+  "archiveHeading": "历史版本",
+  "archiveTerms": "入学报名条款和条件（PDF）",
+  "archiveRefund": "退费政策（PDF）",
+  "archiveEmpty": "目前暂无往年版本。",
+  "documentsHelp": "有报名问题？请联系我们的校长。",
+  "documentsContact": "咨询报名 <span aria-hidden=\"true\">↗</span>"
 };
 
-const translationAttributes = ['aria-label', 'alt', 'content'];
+const translationAttributes = ['aria-label', 'alt', 'content', 'src', 'href'];
 const translatedContent = Array.from(document.querySelectorAll('[data-i18n]'), (element) => ({
   element,
   key: element.dataset.i18n,
@@ -227,4 +263,4 @@ document.addEventListener('click', (event) => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
 
-window.matchMedia('(max-width: 800px)').addEventListener('change', closeMenu);
+window.matchMedia('(max-width: 1100px)').addEventListener('change', closeMenu);
